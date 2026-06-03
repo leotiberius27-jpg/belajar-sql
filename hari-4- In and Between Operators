@@ -1,0 +1,36 @@
+#Logical Operators
+##In 
+
+
+select *
+from customers
+where state in ('PA', 'TX', 'IL') 
+;
+
+select *
+from customers
+where first_name not in ('Kevin', 'KElly', 'Frodo') 
+;
+
+
+##Between Operator 
+
+select * 
+from customers
+where total_money_spent between 500 and 1000
+;
+
+select * 
+from customers
+where total_money_spent >= 1009 and total_money_spent <= 534
+;
+
+select * 
+from customers
+where birth_date between '2020-01-01' and '1990-01-01'
+;
+
+select * 
+from customers
+where city between 'Dallas' and 'Scranton'
+;
